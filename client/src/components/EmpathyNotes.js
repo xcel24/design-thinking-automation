@@ -170,7 +170,11 @@ class EmpathyNotes extends Component{
                     <TableRow key={designer.id}>
                     <TableCell align="left">{designer.id}</TableCell>
                     <TableCell component="th" scope="row">
-                    <a href={url+designer.name +'/'+designer.office}>{designer.name}</a>
+                      <Link to={{
+                        pathname:'/notessession'
+                      }}>  
+                        {designer.name}
+                      </Link>
                     </TableCell>
                     <TableCell align="left">{designer.designation}</TableCell>
                     <TableCell align="left">{designer.office}</TableCell>
