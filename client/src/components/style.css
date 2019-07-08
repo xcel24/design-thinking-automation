@@ -1,0 +1,15 @@
+
+ .navbar{
+    height: 50px !important;
+    margin-bottom: 10 !important;
+    border-radius: 5 !important;
+}
+
+
+ .navbar-nav >li > a,.navbar-brand{
+    padding-top: 6px !important;
+    padding-bottom: 0px;
+    height: 33px;
+} 
+
+ 
