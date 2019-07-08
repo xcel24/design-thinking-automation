@@ -64,6 +64,7 @@ ReactDOM.render((
             <Route exact path='/lastEmpathyMap' component={LastEmpathyMap} />
             <Route exact path='/showEmpathyMap' component={ShowEmpathy} />
             <Route exact path='/triangular' component={Triangular} />
+            <Route exact path='/notessession' component={NotesSession} />
     </Router>
    
 

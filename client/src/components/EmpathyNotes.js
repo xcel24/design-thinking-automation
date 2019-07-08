@@ -171,7 +171,7 @@ class EmpathyNotes extends Component{
                     <TableCell align="left">{designer.id}</TableCell>
                     <TableCell component="th" scope="row">
                       <Link to={{
-                        pathname:'/notessession'
+                        pathname:`/notessession/${designer.name}/${designer.office}`
                       }}>  
                         {designer.name}
                       </Link>
