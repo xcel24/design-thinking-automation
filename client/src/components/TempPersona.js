@@ -112,11 +112,9 @@ export default class TempPersona extends Component {
                                         </div>
                                         <div className="card-body">
                                             <ul className="list-group">
-                                                    <li className="list-group-item">Item 1</li>
-                                                    <li className="list-group-item">Item 2</li>
-                                                    <li className="list-group-item">Item 3</li>
-                                                    <li className="list-group-item">Item 4</li>
-                                                    <textarea className="form-control" placeholder="Add Message"></textarea>
+                                                <textarea className="form-control" placeholder="Add Message"></textarea>
+                                                <textarea className="form-control" placeholder="Add Message"></textarea>
+                                                <textarea className="form-control" placeholder="Add Message"></textarea>
                                             </ul>
                                         </div> 
                                     </div>
@@ -126,10 +124,8 @@ export default class TempPersona extends Component {
                                         </div>
                                         <div className="card-body">
                                             <ul className="list-group">
-                                                <li className="list-group-item">Item 1</li>
-                                                <li className="list-group-item">Item 2</li>
-                                                <li className="list-group-item">Item 3</li>
-                                                <li className="list-group-item">Item 4</li>
+                                                <textarea className="form-control" placeholder="Add Message"></textarea>
+                                                <textarea className="form-control" placeholder="Add Message"></textarea>
                                                 <textarea className="form-control" placeholder="Add Message"></textarea>
                                             </ul>
                                         </div> 
@@ -179,9 +175,9 @@ export default class TempPersona extends Component {
                                         <div className="card-header "><strong>Enablers</strong></div>
                                         <div className="card-body">
                                             <ul className="list-group">
-                                                <li className="list-group-item">Item1</li>
-                                                <li className="list-group-item">Item2</li>
-                                                <li className="list-group-item">Item3</li>
+                                                <textarea className="form-control" placeholder="Add Message"></textarea>
+                                                <textarea className="form-control" placeholder="Add Message"></textarea>
+                                                <textarea className="form-control" placeholder="Add Message"></textarea>
                                             </ul>
                                         </div>
                                     </div>
@@ -189,9 +185,9 @@ export default class TempPersona extends Component {
                                         <div className="card-header "><strong>Suggested Features</strong></div>
                                         <div className="card-body">
                                             <ul className="list-group">
-                                                <li className="list-group-item">Item1</li>
-                                                <li className="list-group-item">Item2</li>
-                                                <li className="list-group-item">Item3</li>
+                                                <textarea className="form-control" placeholder="Add Message"></textarea>
+                                                <textarea className="form-control" placeholder="Add Message"></textarea>
+                                                <textarea className="form-control" placeholder="Add Message"></textarea>
                                             </ul>
                                         </div>
                                     </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
+import {Link} from 'react-router-dom';
 
 export default class ShowEmpathy extends Component {
 
@@ -99,6 +100,13 @@ export default class ShowEmpathy extends Component {
                             </div>
                         </div>
                     </div>
+                    <Link to={{
+                        pathname:'artefacts'
+                    }}>
+                        <button className="btn btn-primary">
+                            Back
+                        </button>
+                    </Link>
             </>
         )
     }

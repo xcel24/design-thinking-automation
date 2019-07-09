@@ -28,7 +28,7 @@ export default class PersonaEmpathy extends Component {
                                     <Link to={{
                                         pathname:'/lastEmpathyMap',
                                         state:{
-                                            temppersonas:temppersonas[index]
+                                            temppersonas:temppersonas[index],
                                         }
                                     }}>
                                         <button 

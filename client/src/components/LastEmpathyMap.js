@@ -24,7 +24,8 @@ export default class LastEmpathyMap extends Component {
 
     showState=()=>{
 
-        console.log(this.state);
+        const {temppersonas}=this.props.location.state;
+        console.log(temppersonas);
 
     }
 
@@ -41,7 +42,7 @@ export default class LastEmpathyMap extends Component {
 
         const Think=[],Feel=[],Say=[],Do=[];
         
-        dummyData.map(data=>{
+        Names.map(data=>{
             axios.get(`/api/think/${data}`)
                 .then((res)=>{
                     const temp=[];
@@ -292,7 +293,6 @@ export default class LastEmpathyMap extends Component {
                         </div>
     
                     </div>
-                    <button onClick={this.showState}>Show State</button>
                     <button onClick={this.handleSubmit} className="btn btn-success">Submit</button>
                     <Link to={{
                         pathname:'showEmpathyMap',

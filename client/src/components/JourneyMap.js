@@ -23,21 +23,13 @@ class JourneyMap extends Component{
 
     addRow=(e)=>{
 
-        let mytable=document.querySelector('.table');
-        //let dummy_row=document.querySelector('tr');
+        const {rows}=this.state;
 
-        let newRow=mytable.insertRow(-1);
-        let newCell=newRow.insertCell(0);
-        let newText = document.createTextNode('New bottom row');
-        newCell.appendChild(newText);
+        rows.push('new-row');
 
-        // const {rows}=this.state;
-
-        // rows.push('new_row');
-
-        // this.setState({
-        //     rows:rows
-        // });
+        this.setState({
+            rows:rows
+        });
     }
 
     addColumn=()=>{
@@ -106,83 +98,55 @@ class JourneyMap extends Component{
             <div>
                <table className="table table-striped table-hover table-bordered">
                    <thead>
-                   <tr className="table-primary my-table">
-                       <th  >Activities</th>
-                       <th>EMR Alloted</th>
-                       <th>Offer Mode</th>
-                       <th>Counter Offer Received</th>
-                       <th>PO Created</th>
-                       <th>PO Modified</th>
-                       <th>Action</th>
+                   <tr className="table-info my-table">
+                       <th><textarea placeholder="Add Message"></textarea></th>
+                       <th><textarea placeholder="Add Message"></textarea></th>
+                       <th><textarea placeholder="Add Message"></textarea></th>
+                       <th><textarea placeholder="Add Message"></textarea></th>
+                       <th><textarea placeholder="Add Message"></textarea></th>
+                       <th><textarea placeholder="Add Message"></textarea></th>
                     </tr>
                     </thead>
                     <tbody>
                         {rows.map((item,index)=>(
                             <tr key={index}>
-                            <td>
-                               <p>Sunt officia pariatur consectetur deserunt aliquip. 
-                                   Ad minim nulla elit ea adipisicing fugiat officia. 
-                                   Dolore eu ipsum tempor esse fugiat est proident 
-                                </p>
+                            <td className="table-primary">
+                                <textarea placeholder="Add Message"></textarea>
                             </td>
                             <td>
-                               <p>Sunt officia pariatur consectetur deserunt aliquip. 
-                                   Ad minim nulla elit ea adipisicing fugiat officia. 
-                                   Dolore eu ipsum tempor esse fugiat est p
-                                </p>
+                                <textarea placeholder="Add Message"></textarea>
                             </td>
                             <td>
-                               <p>Sunt officia pariatur consectetur deserunt aliquip. 
-                                   Ad minim nulla elit ea adipisicing fugiat officia. 
-                                   Dolore eu ipsum tempor esse fugiat est proident 
-                                </p>
+                                <textarea placeholder="Add Message"></textarea>
                             </td>
                             <td>
-                               <p>Sunt officia pariatur consectetur deserunt aliquip. 
-                                   Ad minim nulla elit ea adipisicing fugiat officia. 
-                                   Dolore eu ipsum tempor esse fugiat est proident 
-                                </p>
+                                <textarea placeholder="Add Message"></textarea>
                             </td>
                             <td>
-                               <p>Sunt officia pariatur consectetur deserunt aliquip. 
-                                   Ad minim nulla elit ea adipisicing fugiat officia. 
-                                   Dolore eu ipsum tempor esse fugiat est proident et proident occaecat aute ipsum ex. 
-                                   Proident dolore et excepteur
-                                </p>
+                                <textarea placeholder="Add Message"></textarea>
                             </td>
                             <td>
-                               <p>Sunt officia pariatur consectetur deserunt aliquip. 
-                                   Ad minim nulla elit ea adipisicing fugiat officia. 
-                                   Dolore eu ipsum tempor esse fugiat est proident et
-                                </p>
-                            </td>
-                            <td>
-                                <button
-                                    id={index} 
-                                    className="btn btn-info btn-sm" 
-                                    onClick={(e)=>this.addRow(e)}>
-                                    Add Row
-                                </button>
-                                <button
-                                    id={index} 
-                                    className="btn btn-info btn-sm" 
-                                    onClick={this.addColumn}>
-                                    Add Column
-                                </button>
+                                <textarea placeholder="Add Message"></textarea>
                             </td>
                         </tr>
                         ))}
                     </tbody>
                 </table>
 
+                <button className="btn btn-success" onClick={this.addRow}>
+                    Add Row
+                </button>
+                <button className="btn btn-danger ml-3" onClick={this.addRow}>
+                    Delete Row
+                </button>
                 <Link to={{
                     pathname:'/ideate'
                 }}>
-                    <button className="btn btn-success">
+                    <button className="btn btn-success float-right">
                         Submit
                     </button>
                 </Link>
-                <div className="float-right">
+                <div className="float-right mx-2">
                 <Link to={{
                         pathname:'/artefacts'
                         }}>     
@@ -192,7 +156,7 @@ class JourneyMap extends Component{
                 </Link>
             </div>
 
-            <div>
+            <div className="float-right mx-2">
                 <button onClick={this.saveData} className="btn btn-primary">Download</button>
             </div>
 
