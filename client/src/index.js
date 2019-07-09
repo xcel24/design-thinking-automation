@@ -30,12 +30,15 @@ import PersonaEmpathy from './components/PersonaEmpathy';
 import LastEmpathyMap from './components/LastEmpathyMap';
 import ShowEmpathy from './components/ShowEmpathy';
 import Triangular from './components/Triangular';
+import NavigationBar from './components/NavigationBar';
+
 
 
 
 ReactDOM.render((
 
     <Router>
+            <Route path='/' component={NavigationBar} />
             <Route exact path='/' component={Login} />
             <Route exact path='/app' component={App} />
             <Route exact path='/dashboard' component={Dashboard} />

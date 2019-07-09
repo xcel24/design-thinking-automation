@@ -107,6 +107,13 @@ export default class ShowEmpathy extends Component {
                             Back
                         </button>
                     </Link>
+                    <Link to={{
+                        pathname:'/'
+                    }}>
+                        <button className="btn btn-primary">
+                            Logout
+                        </button>
+                    </Link>
             </>
         )
     }

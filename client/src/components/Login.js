@@ -78,11 +78,11 @@ class Login extends Component {
     render() {
         return (
             <>
-                <div className="container ">
+                <div className="container">
                     <div className="row">
                         <div className="col-md-6">
                             <div className="pb-2 mt-4 mb-2 border-bottom">
-                                New User Sign Up
+                                <strong>New User Sign Up</strong>
                             </div>
                                 <form>
                                      <div className="form-group">
@@ -131,7 +131,7 @@ class Login extends Component {
                         </div>
                         <div className="col-md-6">
                             <div className="pb-2 mt-4 mb-2 border-bottom">
-                                Login Here
+                                <strong>Login Here</strong>
                             </div>
                             <form>
                                 <div className="form-group">
@@ -154,7 +154,8 @@ class Login extends Component {
                                 </div>
                                 <div className="checkbox">
                                     <label>
-                                    <input type="checkbox" />Remember Me
+                                    <input type="checkbox" />
+                                    <span className="ml-2">Remember Me</span>
                                     </label>    
                                 </div>
                                 <button
